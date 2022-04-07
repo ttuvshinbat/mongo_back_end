@@ -1,6 +1,6 @@
 const dotenv = require("dotenv").config();
 const express = require("express");
-const port = 3001;
+const port = 3002;
 const app = express();
 const apiRoutes = require("./routes/api");
 const adminRoutes = require("./routes/admin");
