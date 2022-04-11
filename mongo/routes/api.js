@@ -17,10 +17,10 @@ router.post(
   middleware.createfood(),
   foodController.create_food
 );
-router.post("/updatefood/:id", foodController.updatefood);
-router.get("/deletefood/:id", foodController.deletefood);
+router.put("/updatefood/:id", foodController.updatefood);
+router.delete("/deletefood/:id", foodController.deletefood);
 router.get("/food/:id", foodController.food);
-router.use("/createfoods", foodController.create_food);
+router.post("/createfoods", foodController.create_food);
 router.get("/foodsearch", foodController.food_search);
 
 router.get("/users", userController.get_users);
@@ -30,9 +30,9 @@ router.post(
   middleware.createuser(),
   userController.create_users
 );
-router.post("/updateuser/:id", userController.updateUser);
+router.put("/updateuser/:id", userController.updateUser);
 router.get("/usersearch", userController.user_search);
-router.get("/deleteuser/:id", userController.delete_user);
+router.delete("/deleteuser/:id", userController.delete_user);
 
 router.get("/orders", orderController.get_orders);
 router.post(
@@ -40,7 +40,7 @@ router.post(
   middleware.createorders(),
   orderController.create_orders
 );
-router.get("/deleteorder/:id", orderController.delete_order);
-router.post("/updateorder/:id", orderController.update_order);
+router.delete("/deleteorder/:id", orderController.delete_order);
+router.put("/updateorder/:id", orderController.update_order);
 
 module.exports = router;
