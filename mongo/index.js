@@ -5,8 +5,18 @@ const app = express();
 const apiRoutes = require("./routes/api");
 const adminRoutes = require("./routes/admin");
 const connection = require("./database");
+const cors = require("cors");
 app.use(express.json());
 app.use(express.static("public"));
+app.use(cors());
+app.post("/", function requestHandle(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  res.header("Content-Type", "application/json");
+});
 app.use("/api", apiRoutes);
 app.use("/admin", adminRoutes);
 app.all("*", (req, res, next) => {
