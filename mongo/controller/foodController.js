@@ -3,7 +3,7 @@ const Food = require("../models/food");
 const { default: mongoose } = require("mongoose");
 function get_foods(req, res) {
   Food.find({}, function (err, data) {
-    if (err) res.json({ success: false, data: error });
+    if (err) res.json({ success: false, data: err });
     else res.json({ success: true, data: data });
   });
 }
@@ -49,7 +49,7 @@ function updatefood(req, res) {
   });
 }
 function deletefood(req, res) {
-  const id = req.param.id;
+  const id = req.params.id;
   Food.deleteOne({ _id: id }, function (err, data) {
     if (err) res.json({ success: false, data: data });
     else res.json({ success: true, data: " data deleted" });
