@@ -22,7 +22,7 @@ function create_users(req, res) {
 }
 function updateUser(req, res) {
   const data = req.body;
-  const id = req.param.id;
+  const id = req.params.id;
   User.updateOne({ _id: id }, data, function (err, data) {
     if (err) res.json({ success: false, data: err });
     else res.json({ success: true, data: data });
@@ -30,7 +30,7 @@ function updateUser(req, res) {
 }
 function user(req, res) {
   const data = req.body;
-  const id = req.param.id;
+  const id = req.params.id;
   User.find({ _id: id }, data, function (err, data) {
     if (err) res.json({ success: false, data: err });
     else res.json({ success: true, data: data });
