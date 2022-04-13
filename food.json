@@ -1,0 +1,251 @@
+[{
+        "sales": false,
+        "name": "Хулууны зутан",
+        "price": 6800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/pumpkin_soup.png",
+        "tumb_img": "1_tumb.png",
+        "ingredients": "Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр",
+        "discount": 20,
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "white"
+        }
+    },
+    {
+        "sales": false,
+
+
+        "name": "Итали пицца",
+        "price": 35800,
+        "portion": 4,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/italian_pizza.png",
+        "tumb_img": "2_tumb.png",
+        "ingredients": "Улаан лоолийн нухаш, улаан буудайн гурил, бяслаг",
+        "discount": {
+            "name": 10,
+            "category": "Үндсэн хоол",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Чикен рамен",
+        "price": 9800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/chicken_ramen.png",
+        "tumb_img": "3_tumb.png",
+        "ingredients": "Тахианы гуяны мах, будааны гоймон, тахианы шөл",
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Догбугги",
+        "price": 14000,
+        "portion": 3,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/dogbukki.png",
+        "tumb_img": "4_tumb.png",
+        "ingredients": "Будааны боов, үден, ",
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Кобб салад",
+        "price": 6800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/cobb_salad.png",
+        "tumb_img": "/tumbnails/cobb_salad.png",
+        "ingredients": "Нарийн ногоо, авакадо, улаан лооль, огурци, салад",
+        "category": {
+            "name": "Салад ба зууш",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Банана сендвич",
+        "price": 15800,
+        "portion": 2,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/banana_sandwich.png",
+        "tumb_img": "/tumbnails/banana_sandwich.png",
+        "ingredients": "Талх, банана, шоколадны крем, ",
+        "category": {
+            "name": "Салад ба зууш",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Холимог салад",
+        "price": 9800,
+        "portion": 2,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/detox_salad.png",
+        "tumb_img": "/tumbnails/detox_salad.png",
+        "ingredients": "Гурил, саладны навч, соус, улаан лооль",
+        "category": {
+            "name": "Салад ба зууш",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Махан зууш",
+        "price": 14000,
+        "portion": 2,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/club_steack.png",
+        "tumb_img": "/tumbnails/club_steack.png",
+        "ingredients": "Үхрийн мах, салатны навч",
+        "category": {
+            "name": "Салад ба зууш",
+            "color": "white"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Хаан бургер",
+        "price": 24000,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/chicken_burger.png",
+        "tumb_img": "/tumbnails/chicken_burger.png",
+        "ingredients": "Үхрийн мах, салатны навч, бургерийн талх, соус, сонгино",
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "blue"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Самарны нухаш",
+        "price": 8800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/nut_mash.png",
+        "tumb_img": "/tumbnails/nut_mash.png",
+        "ingredients": "Самар, улаан лооль, авакадо, бусад ногоо",
+        "category": {
+            "name": "Амттан",
+            "color": "blue"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Ногооны салад",
+        "price": 15800,
+        "portion": 3,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/detox_salad.png",
+        "tumb_img": "/tumbnails/detox_salad.png",
+        "ingredients": "Cонгино, эрдэнэ шиш, соус, лууван, салатны навч",
+        "category": {
+            "name": "Салад ба зууш",
+            "color": "blue"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Үхрийн махан  стейк",
+        "price": 22800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "12.png",
+        "tumb_img": "12_tumb.png",
+        "ingredients": "Үхрийн мах, соус, төмсний нухаш, брокколи",
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "blue"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Тахиан махан  стейк",
+        "price": 25800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/steak.png",
+        "tumb_img": "/tumbnails/steak.png",
+        "ingredients": "Тахиан мах, соус, төмсний нухаш, брокколи",
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "blue"
+        }
+    },
+    {
+        "discount": 0,
+        "sales": false,
+
+
+        "name": "Cендвич",
+        "price": 8800,
+        "portion": 1,
+        "status": "хүргэлт",
+        "stock": 10,
+        "image": "/food/sandwich.png",
+        "tumb_img": "/tumbnails/sandwich.png",
+        "ingredients": "Cендвичний талх, хиам, салатны навч, сонгино",
+        "category": {
+            "name": "Үндсэн хоол",
+            "color": "blue"
+        }
+    }
+]

@@ -3,12 +3,17 @@ const router = express.Router();
 const Food = require("../models/food");
 const User = require("../models/user");
 const order = require("../models/order");
+const Basket = require("../models/basket");
 const auth = require("../middleware/auth");
 
 const middleware = require("../middleware/create_update");
 const foodController = require("../controller/foodController");
 const userController = require("../controller/userController");
 const orderController = require("../controller/orderController");
+const basketcontroller = require("../controller/basketController");
+
+router.post("/basket", auth, basketcontroller.basket);
+router.post("/basket-info", auth, basketcontroller.basket_info);
 
 router.get("/foods", foodController.get_foods);
 router.post(
@@ -20,7 +25,7 @@ router.post(
 router.put("/updatefood/:id", foodController.updatefood);
 router.delete("/deletefood/:id", foodController.deletefood);
 router.get("/food/:id", foodController.food);
-router.post("/createfoods", foodController.create_food);
+router.post("/createfoods", foodController.create_foods);
 router.get("/foodsearch", foodController.food_search);
 
 router.get("/users", userController.get_users);
