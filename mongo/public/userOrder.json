@@ -1,34 +1,60 @@
 [{
-	"status": 1,
-	"user_id": "623fd73da1919293270e766d",
-	"total_price" : 17998,
-	"payment_type": 2,
-	"deliverman_id" : "62402319de6d3521b16fe3b6",
-	"created_date" : "2022-03-27",
-	"order_detail": {
-		"food_id":"623ef1a509f0cd3a10718941",
-		"quantity":2,
-		"price":8999
+		"status": 1,
+		"user_id": "623fd73da1919293270e766d",
+		"total_price": 17998,
+		"payment_type": 2,
+		"deliverman_id": "62402319de6d3521b16fe3b6",
+		"created_date": "2022-03-27",
+		"order_detail": {
+			"food_id": "623ef1a509f0cd3a10718941",
+			"quantity": 2,
+			"price": 8999
+		}
+
+	}, {
+		"name": "Badamaa",
+		"email": "nadaa@mstarsyahoo.com",
+		"phone": 99444848,
+		"password": "Tuvshinbat11.",
+		"address": "hanuul duureg",
+		"role_id": 3,
+		"created_date": "2022-04-01"
+
+	}, {
+		"name": "Гуляш",
+		"price": 8999,
+		"discount": 0,
+		"stock": 2,
+		"category": {
+			"name": "үндсэн хоол",
+			"color": "green"
+		}
+
+	},
+	{
+		"order": {
+			"food_id": {
+				"category": {
+					"name": "Үндсэн хоол",
+					"color": "white"
+				},
+				"_id": "62566f068898f5289a23eb1e",
+				"name": "Хулууны зутан",
+				"price": 6800,
+				"discount": 20,
+				"portion": 1,
+				"stock": 10,
+				"ingredients": "Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр",
+				"status": "хүргэлт",
+				"sales": false,
+				"image": "/food/pumpkin_soup.png",
+				"tumb_img": "1_tumb.png",
+				"__v": 0
+			},
+			"quantity": 1
+		},
+		"_id": "625769b2d30dbf6bc0045905",
+		"user_email": "goku@yahoo.com",
+		"__v": 0
 	}
-	
-},{
-	"name": "Badamaa",
-	"email": "nadaa@mstarsyahoo.com",
-	"phone" : 99444848,
-	"password": "Tuvshinbat11.",
-	"address" : "hanuul duureg",
-	"role_id" : 3,
-	"created_date": "2022-04-01"
-	
-},{
-	"name": "Гуляш",
-	"price": 8999,
-	"discount" : 0,
-	"stock": 2,
-	"category": {
-		"name": "үндсэн хоол",
-		"color": "green"
-	}
-	
-}
 ]
