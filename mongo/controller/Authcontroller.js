@@ -6,14 +6,16 @@ const register = async (req, res, next) => {
   if (data) {
     const oldUser = await Users.findOne({ email: data.email });
     if (oldUser) {
-      return res.status(400).json({
+      return res.status(401).json({
         success: false,
         status: "hereglegch burtgeltei baina.nevterch orno uu",
       });
     }
+
     var hashedPassword = await bcrypt.hash(data.password, 10);
     data.password = hashedPassword;
-    data.role == 0 ? (data.role_id = 1) : (data.role_id = data.role);
+
+    data.role_id == 0 ? (data.role_id = 1) : (data.role_id = data.role);
     data.created_date = Date("Y-m-d");
     data.last_activity = Date("Y-m-d h:m:s");
     email = data.email;
@@ -77,7 +79,7 @@ const login = async (req, res) => {
       }
     }
   } catch (err) {
-    return res.json({ succes: false, message: err });
+    return res.json({ success: false, message: err + " error bolood bn" });
   }
 };
 
