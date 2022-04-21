@@ -7,6 +7,9 @@ function basket(req, res, next) {
     const user = Users.findOne({ email: data.user_email });
     if (user) {
       const data = req.body;
+      if (data.quantity < 0) {
+        data.quantity = 0
+      }
       return Basket.create(data, function (err, data) {
         if (err) res.json({ success: false, data: err });
         else res.json({ success: true, data: data });
